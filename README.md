@@ -5,7 +5,7 @@ Home: https://github.com/callumrollo/cmcrameri
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cmcrameri-feedstock/blob/master/LICENSE.txt)
 
 Summary: Perceptually uniform colourmaps for geosciences
 
