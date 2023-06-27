@@ -1,5 +1,5 @@
 {% set name = "cmcrameri" %}
-{% set version = "1.4" %}
+{% set version = "1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 613158db1782754409c073c1b97fa299462ce2cb26c8533e3273b360fd809945
+  sha256: 739300c3109eba37c56c3ad952863605635986e65c04b7ec3d9bbd19d760eedb
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ about:
   home: https://github.com/callumrollo/cmcrameri
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
   summary: Perceptually uniform colourmaps for geosciences
   description: |
     cmcrameri is a Python wrapper around Fabio Crameri's perceptually uniform colour maps
