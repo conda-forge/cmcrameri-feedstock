@@ -31,7 +31,7 @@ about:
   home: https://github.com/callumrollo/cmcrameri
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
   summary: Perceptually uniform colourmaps for geosciences
   description: |
     cmcrameri is a Python wrapper around Fabio Crameri's perceptually uniform colour maps
