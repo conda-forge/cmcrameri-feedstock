@@ -1,5 +1,5 @@
 {% set name = "cmcrameri" %}
-{% set version = "1.6" %}
+{% set version = "1.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 739300c3109eba37c56c3ad952863605635986e65c04b7ec3d9bbd19d760eedb
+  sha256: 581f459809ce1951bbd305b7992d56185bab33a79efd40059d414365ef97abfe
 
 build:
   noarch: python
