@@ -1,0 +1,49 @@
+schema_version: 1
+
+context:
+  version: "1.10"
+
+package:
+  name: cmcrameri
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/c/cmcrameri/cmcrameri-${{ version }}.tar.gz
+  sha256: 38a776359040674cb4028695faf0121d0ccadb40eee0c9834eb4947674962b7e
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - setuptools >=41.2
+    - setuptools-scm
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - matplotlib-base
+    - numpy
+    - packaging
+
+tests:
+  - python:
+      imports:
+        - cmcrameri
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
+about:
+  summary: Perceptually uniform colormaps by Fabio Crameri
+  license: MIT
+  license_file: LICENSE.txt
+  homepage: https://pypi.org/project/cmcrameri/
+  repository: https://github.com/callumrollo/cmcrameri
+
+extra:
+  recipe-maintainers:
+    - callumrollo
